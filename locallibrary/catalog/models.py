@@ -3,8 +3,6 @@ from django.db import models
 
 import uuid # Required for unique book instances
 
-
-# Create your models here.
 from django.urls import reverse # Used in get_absolute_url() to get URL for specified ID
 
 from django.db.models import UniqueConstraint # Constrains fields to unique values
