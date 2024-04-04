@@ -2,9 +2,12 @@
 <h1>Author List</h1>
 {% if author_list %}
 <ul>
-  {% for author in authorlist %}
+  {% for author in author_list %}
   <li>
-    <a href="{{ authors.get_absolute_url }}">{{ author.first_name }}</a>
+    <a href="{{ author.get_absolute_url }}"
+      >{{ author.first_name }} {{author.last_name}} ({{author.date_of_birth}} -
+      {{author.date_of_death}})</a
+    >
   </li>
   {% endfor %}
 </ul>
