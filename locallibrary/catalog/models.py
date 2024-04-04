@@ -106,6 +106,8 @@ class BookInstance(models.Model):
         """String for representing the Model object."""
         return f'{self.id} ({self.book.title})'
     
+
+    
 class Author(models.Model):
     """Model representing an author."""
     first_name = models.CharField(max_length=100)
@@ -135,3 +137,4 @@ class Language(models.Model):
     def __str__(self):
         """String for representing the Model object."""
         return f'{self.language_name}'
+    
