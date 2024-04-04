@@ -10,7 +10,7 @@
   {% endif %}
 </ul>
 {% endif %} {% endblock %}{% block content %}
-<h1>Title: {{ author.first_name }}</h1>
+<h1>Title: {{ author.first_name }} {{author.last_name}}</h1>
 
 <p>Born: {{ author.date_of_birth }}</p>
 <p>Died: {{ author.date_of_death }}</p>
