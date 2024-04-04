@@ -16,7 +16,7 @@
 <p>Died: {{ author.date_of_death }}</p>
 
 <div style="margin-left: 20px; margin-top: 20px">
-  <h4>Books my {{ author.first_name }}</h4>
+  <h4>Books by {{ author.first_name }}</h4>
 
   {% for book in author.book_set.all %}
   <li>{{book.title}}</li>
